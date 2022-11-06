@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;700;900&display=swap');
+
+:root{
+    --color1: #F0D237;
+    --color2: #F78B6D;
+    --color3: #FA6672;
+    --color4: #32DBA2;
+    --color5: #B096E0;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{ /* Así se crea una regla de estilo para el objeto body */
+    background-color: var(--color-blanco);/* Color de fondo */
+    color: var(--color-gris-oscuro); /* Color de texto */
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    margin: 0;/*Elimina margen por defecto de body*/
+   
+}
+
+img{
+    display: block; 
+}
+
+figure{
+    margin: 0;
+}
+
+p{
+    margin-top: 0; /*pargen superior del parrafo 0 es decir espacio cero antes del párrafo*/
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+h1{
+    font-size: 30px; /* Tamaño de la letra en pixeles */
+    font-weight: 400; /* Estilo o grosor de la letra */
+}
+h2{
+    font-weight: 200; 
+    font-size: 30px;
+    /*
+    text-transform: lowercase; /* Mostrar los textos en minúscula */
+    */
+    letter-spacing: -2px;
+}
+h3{
+    font-size: 18px;
+    text-transform: uppercase; /* Mostrar los textos en mayúcula */
+    font-weight: 700;
+}
+#top-nav{
+    background-color: var(--color-gris-oscuro) ;
+    
+   
+
+}
+
+#main-header{
+    background-color: var(--color1);
+    color: (--color-negro);
+    position: sticky;  /* quede pegado en determinado posición*/
+    top: 0;
+  
+    }
+#main-header-content{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#main-header p{
+    margin-bottom: 0; /*para quitar espacio antes del párrafo*/
+   
+
+}
+
+
+#imagen-fondo{
+    background-image:url("../images/fondo02.jpg") ;
+    background-position:center center; /* centrar horizontaly vertical*/
+    background-size: cover; /*  significa que la imagen se agranda o se reduce; es decir imagen que se adapta a las características de los distintos dispositivos*/
+    text-align:left;
+    color:yellow; /*color de texto*/
+    background-attachment: fixed; /* la imagen de fondo queda fijo con respecto al navegador*/
+    height: 540px;
+  
+
+}
+
+#rol{ /* Así se aplica formato a un objeto por su id */
+    background-color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
+}
+
+#conceptos{
+    background-color: var(--color5); /*para color de fondo*/
+    color: var(--color-gris-oscuro); /*color de  texto*/
+}
+
+#frases{
+    background-color: burlywood; /*para color de fondo*/
+    color: var(--color-gris-oscuro); /*color de  texto*/
+}
+
+#Brecha{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+
+#educacionsteam{
+    background-color: var(--color2);
+}
+#paisajes{
+    background-color: var(--color4);
+}
+
+#videos {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);  /*color de texto*/
+
+}
+
+#main-footer{
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-claro);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+
+
+
+.padded{
+    padding-top: 10px; /* padding es la distancia del borde al contenido */
+    padding-bottom: 10px;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;  /* texto flexible llena al contenido */
+    margin-left: -15px; /*desplaza texto hacia la izquierda 15 pixeles*/
+    margin-right: -15px;
+    flex-wrap: wrap;/*esta propiedad cuando falta espacio pasa a la siguiente linea*/
+    justify-content: center; /*para que centra el contenido de una caja*/
+}
+
+.col{
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 0;  
+    flex-grow: 1;
+    box-sizing: border-box;  /*esta propiedad hace que padding no ingremanta el ancho total es decir estpá borrando 15pixeles lado izquierdo y derecho*/
+}
+
+.col-50{
+    flex-basis: 30%;  /*ancho de la columna o caja ocupa la mitad o 50%*/
+    max-width: 30%; /*ancho maximo de la caja o columna 30%*/
+
+    }
+.col-70{
+    flex-basis: 70%;  /*ancho de la columna o caja ocupa la mitad o 50%*/
+    max-width: 70%;
+}
+
+.img-fluid{
+    max-width: 100%; /*se ajusta al ancho maximo a su contenedor*/
+    height: auto;/* estapropiedad es para que el alto ajuste proporcional al ancho*/
+}
+
+.menu{
+    list-style: none; /*quita viñetas de la lista*/
+    display: flex;  /* para xcolumnas*/
+    padding: 0; /* es la distancia entre los objetos*/
+    margin: 0;
+
+}
+
+.menu li a{  /*a todos los hipervinculos de la lista de menu se aplica padding (es separar las lista. Padding es la separacion de los objetos)*/
+display: block;  /* es par que acepta al aplicar padding acepte vrtical y horizontal*/
+
+}
+
+.menu-top li a{
+    padding: 5px 8px; /*padding arriba y abajo 5pixeles y por el costado 8 pixeles*/
+    color: var(--color-gris-claro);
+    text-decoration: none;
+}
+
+.menu-top li a:hover{  /*cuando se coloca el mouse sobre el texto de menu */
+    color: var(--color-blanco); /*el color cambia a blanco*/
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.9);
+    }
+.imag-redim{
+        max-width:50%;
+        max-height:50%;
+}
+
+.menu-main li a{
+    padding: 20px 12px; /*padding arriba y abajo 5pixeles y por el costado 8 pixeles*/
+    color: var(--color-negro);
+    text-transform: uppercase; /*esta propiedad convierte a mayuscula*/
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0,8em;
+}
+.menu-main li a:hover{  /*cuando se coloca el mouse sobre el texto de menu */
+    color: var(--color-blanco); /*el color cambia a blanco*/
+    text-decoration: none;
+
+}
+
+#galeria_fotos{
+    background-color: var(--color-gris-claro);
+    
+    }
+
+#lista-galeriafoto, #lista-vendedores
+{
+    list-style: none; /*quita las viñetas*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;  /*distribuye en columnas las cajas de nombre de fotos*/
+    justify-content: center;
+   }
+
+#lista-galeriafoto li, #lista-vendedores li
+{
+    flex-basis: 60%; /* separa espacios o columnas*/
+    background-color: var(--color2);  /*color de fondo de texto*/
+    max-width: 40%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    cursor: pointer;
+}
+.mega-texto{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 800;
+    line-height: 0.8em; /* 0,8 ES 80%  em quiere decir reduce o aumenta porporcional al tamaño (font-size) */
+}
+
+
+.botonera{
+    display: flex;
+}
+.circulo{
+    border: solid 2px var(--color-gris-claro);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#boton-oscuro{
+    background-color: var(--color-gris-claro);
+}
+
+#caja-posicion{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#direccion{
+    background-color: var(--color5);
+    
+}
+#steam {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+/********  VIDEO Y MAPA  **************/
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto; /*altura del video se ajusta de manera proporcional al ancho*/
+    
+  }
+
+  .mapa {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto; /*altura del video se ajusta de manera proporcional al ancho*/
+    
+  }
+
+  /*******  FORMULARIO DE CONTACTO *******/
+
+  .form-control {
+    width: 100%;
+    padding: 10px; /*aumenta el alto del cuadro*/
+    font: inherit;  /*texto mas pequeno dentro del cuadro de texto*/
+    box-sizing: border-box; /*reduce un poco el tamaño del control o cajas */
+    border-radius: 0;  /**esquinas sin redondear . es recto**/
+    border: none; /**sin qborde**/
+    border-bottom: solid 1px var(--color-gris-claro); /* borde inferior gris claro*/
+    outline: none; /*hace desaparecer el borde que tenia al colocar el curso sobre la caja u obleto*/
+   
+}
+
+.form-control:focus{
+  border-bottom-color: var(--color4); /* cuando el cursor está sobre la caja o objeto cambia de color el borde inferior*/
+}
+  .form-group{
+    padding-bottom-color:var(--color2); /** para separar los controles*/
+  }
+
+  .form-button{
+    padding: 10px 20px;
+    font: inherit;  
+    border: none;/*sin borde*/
+    background-color: var(--color4);
+    color: var(--color-blanco);
+    transition: all .5s ease-in-out; /** es para al psar el mouese por encima cambia de manera suave **/
+
+  }
+  .form-button:hover{
+    background-color: yellow;
+    color: #000000;
+    cursor: pointer;
+    
+
+  }
+
+  /*formatos de PÁGINA STEAM */
+  .list-steam{
+    list-style: none;
+  }
+  

@@ -1,0 +1,67 @@
+@media(max-width:900px){  /*cuando la página al reducir lle a ancho maximo de 900 pixeles */
+    #main-header p{
+        display:none;       /* cuando reducimos la pagina a 900px  el párrafo que está dentro del main header desaparece*/ 
+    }
+    .menu-main li a{
+        padding: 10px 5px; /* el espacio de arriba y abajo de menu cambia a 10px y horizontal 5px*/   
+        font-size: 0.6em;
+    }
+}
+
+@media(max-width:600px){
+    #main-header-content{
+        flex-direction: column; /* cuando llega a 600px los texto de main header de colocan uno debajo de la otra columna*/
+        align-items: center;
+    }   
+    .menu-main li a{
+        padding: 5px;
+     }   
+
+     #rol .row{
+        flex-direction: column;  /* cuando llega a 600px la columnas de colocan uno debajo de la otra columna*/
+     }
+
+     #paisajes .row{
+     flex-direction: column;
+    }
+     #conceptos .row{
+        flex-direction: column; /* cuando llega a 600px la columnas de colocan uno debajo de la otra columna*/
+     }
+
+     #frases .row{
+        flex-direction: column; 
+     
+     }
+     #brecha .row{
+        flex-direction: column; 
+     }
+    #galeria_fotos .row{
+        flex-direction: column;
+        
+    }
+
+    #contactenos .row{
+        flex-direction: column; 
+    }
+    #direccion .row{
+        flex-direction: column;
+             
+    }
+
+    #videos .row{
+        flex-direction: column;
+       
+        
+    }
+/* pagina de STEAM*/
+    #steam .row{
+        flex-direction: column;
+       
+        
+    }
+    #modelosteam .row{
+        flex-direction: column;
+       
+        
+    }
+}
