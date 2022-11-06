@@ -46,7 +46,7 @@ h1{
 }
 h2{
     font-weight: 200; 
-    font-size: 30px;
+    font-size: 25px;
     /*
     text-transform: lowercase; /* Mostrar los textos en minúscula */
     */
@@ -63,6 +63,8 @@ h3{
    
 
 }
+
+
 
 #main-header{
     background-color: var(--color1);
@@ -136,8 +138,6 @@ h3{
     padding-top: 45px;
     padding-bottom: 45px;
 }
-
-
 
 
 .padded{
